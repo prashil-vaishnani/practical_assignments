@@ -53,6 +53,11 @@ function getAns() {
             ans = parseInt(op1) % parseInt(op2);
             document.getElementById("ans").innerHTML = ans;
             break;
+        case "xtopowy":
+            ans = xTopowY();
+            document.getElementById("ans").innerHTML = ans;
+            break;
+
     }
     op1 = 0;
     op2 = 0;
@@ -136,4 +141,8 @@ function btnPow10() {
 }
 function btnSqrt() {
     document.getElementById("ans").innerHTML = Math.sqrt(parseFloat(document.getElementById("ans").innerHTML))
+}
+function xTopowY() {
+
+    return Math.pow(parseFloat(op1), parseInt(op2));
 }
