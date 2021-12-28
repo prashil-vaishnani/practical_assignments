@@ -80,7 +80,7 @@ function btnAbs() {
     );
 }
 
-function changesign() {
+function btnchangesign() {
     let ans = document.getElementById("ans").innerHTML;
     ans[0] === "-"
         ? (document.getElementById("ans").innerHTML = Math.abs(ans))
@@ -130,4 +130,10 @@ function btnPower() {
 function btnInverse() {
     document.getElementById("ans").innerHTML = Math.pow(parseFloat(document.getElementById("ans").innerHTML), -1)
 
+}
+function btnPow10() {
+    document.getElementById("ans").innerHTML = Math.pow(10, parseFloat(document.getElementById("ans").innerHTML))
+}
+function btnSqrt() {
+    document.getElementById("ans").innerHTML = Math.sqrt(parseFloat(document.getElementById("ans").innerHTML))
 }
