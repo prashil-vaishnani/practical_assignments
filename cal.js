@@ -146,3 +146,18 @@ function xTopowY() {
 
     return Math.pow(parseFloat(op1), parseInt(op2));
 }
+function Trigo() {
+    var select = document.getElementById('fn');
+    var text = select.options[select.selectedIndex].text;
+    console.log(text);
+    if (text === "Sin") {
+        document.getElementById("ans").innerHTML = Math.sin(parseFloat(document.getElementById("ans").innerHTML))
+    }
+    else if (text === "Cos") {
+        document.getElementById("ans").innerHTML = Math.cos(parseFloat(document.getElementById("ans").innerHTML))
+    }
+    else if (text === "Tan") {
+        document.getElementById("ans").innerHTML = Math.tan(parseFloat(document.getElementById("ans").innerHTML))
+    }
+
+}

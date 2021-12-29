@@ -15,11 +15,11 @@
         <tr>
             <td colspan="5" class="text-align" id="ans">0</td>
         </tr>
-        <tr>
+        <tr class="color">
             <td>DEG</td>
             <td>F-E</td>
         </tr>
-        <tr>
+        <tr class="color">
             <td>MC</td>
             <td>MR</td>
             <td>M+</td>
@@ -27,11 +27,20 @@
             <td>MS</td>
         </tr>
         <tr>
-            <td colspan="2">Trigonometry</td>
-            <td colspan="2">Function</td>
+            <td colspan="2">
+                <form>
+                    <select id="fn" onchange="Trigo()">
+                        <option>Trigonometry</option>
+                        <option value="sin">Sin</option>
+                        <option value="cos">Cos</option>
+                        <option value="tan">Tan</option>
+                    </select>
+                </form>
+            </td>
+            <td colspan="2" class="color">Function</td>
         </tr>
         <tr>
-            <td>2<sup>nd</sup></td>
+            <td class="color">2<sup>nd</sup></td>
             <td onclick="btnPie()">&#960</td>
             <td onclick="btnE()">e</td>
             <td id="clr" onclick="btnClear()">C</td>
