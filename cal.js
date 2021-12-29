@@ -107,9 +107,7 @@ function btnFactorial() {
 
 function btnPie() {
     console.log(ans)
-    document.getElementById("ans").innerHTML = (
-        parseFloat(document.getElementById("ans").innerHTML) * 3.14159
-    ).toFixed(2);
+    document.getElementById("ans").innerHTML = (Math.PI) * (parseFloat(document.getElementById("ans").innerHTML))
 }
 
 function btnLog() {
@@ -122,7 +120,7 @@ function btnLn() {
     document.getElementById("ans").innerHTML = Math.log(parseFloat(document.getElementById("ans").innerHTML))
 }
 function btnE() {
-    document.getElementById("ans").innerHTML = (parseFloat(document.getElementById("ans").innerHTML) * 2.71828).toFixed(2)
+    document.getElementById("ans").innerHTML = (Math.E) * (parseFloat(document.getElementById("ans").innerHTML))
 }
 
 function btnExp() {
